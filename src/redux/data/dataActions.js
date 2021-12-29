@@ -1,5 +1,7 @@
 // log
 import store from "../store";
+import Web3EthContract from "web3-eth-contract";
+import Web3 from "web3";
 
 const fetchDataRequest = () => {
   return {
@@ -29,15 +31,9 @@ export const fetchData = () => {
         .getState()
         .blockchain.smartContract.methods.totalSupply()
         .call();
-      // let cost = await store
-      //   .getState()
-      //   .blockchain.smartContract.methods.cost()
-      //   .call();
-
       dispatch(
         fetchDataSuccess({
           totalSupply,
-          // cost,
         })
       );
     } catch (err) {

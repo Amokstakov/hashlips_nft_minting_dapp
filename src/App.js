@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { connect } from "./redux/blockchain/blockchainActions";
+import { connect, checkAccount } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
@@ -101,6 +101,7 @@ function App() {
   const [claimingNft, setClaimingNft] = useState(false);
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const [mintAmount, setMintAmount] = useState(1);
+  const [currentAccount, setCurrentAccount] = useState("");
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
     SCAN_LINK: "",
@@ -145,7 +146,7 @@ function App() {
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view i.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -168,6 +169,7 @@ function App() {
     setMintAmount(newMintAmount);
   };
 
+  // potentially remove/change this
   const getData = () => {
     if (blockchain.account !== "" && blockchain.smartContract !== null) {
       dispatch(fetchData(blockchain.account));
@@ -185,6 +187,27 @@ function App() {
     SET_CONFIG(config);
   };
 
+  const checkIfWalletIsConnected = async () => {
+    const { ethereum } = window;
+
+    if (!ethereum) {
+      console.log("Make sure you have metamask!");
+      return;
+    } else {
+      console.log("We have the ethereum object", ethereum);
+    }
+
+    const accounts = await ethereum.request({ method: "eth_accounts" });
+
+    if (accounts.length !== 0) {
+      const account = accounts[0];
+      console.log("Found an authorized account:", account);
+      setCurrentAccount(account);
+    } else {
+      console.log("No authorized account found");
+    }
+  };
+
   useEffect(() => {
     getConfig();
   }, []);
@@ -192,6 +215,10 @@ function App() {
   useEffect(() => {
     getData();
   }, [blockchain.account]);
+
+  useEffect(() => {
+    dispatch(checkAccount());
+  }, []);
 
   return (
     <s.Screen>
@@ -228,7 +255,7 @@ function App() {
                 color: "var(--accent-text)",
               }}
             >
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+              You are the owner of {data.totalSupply} Pixlr NFT's
             </s.TextTitle>
             <s.TextDescription
               style={{
@@ -370,13 +397,6 @@ function App() {
             <s.SpacerMedium />
           </s.Container>
           <s.SpacerLarge />
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg
-              alt={"example"}
-              src={"/config/images/example.gif"}
-              style={{ transform: "scaleX(-1)" }}
-            />
-          </s.Container>
         </ResponsiveWrapper>
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
@@ -402,9 +422,23 @@ function App() {
             gas limit.
           </s.TextDescription>
         </s.Container>
+        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
+          <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "var(--primary-text)",
+            }}
+          >
+            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
+            successfully mint your NFT. We recommend that you don't lower the
+            gas limit.
+          </s.TextDescription>
+          <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
+        </s.Container>
       </s.Container>
     </s.Screen>
   );
 }
 
 export default App;
+t;
