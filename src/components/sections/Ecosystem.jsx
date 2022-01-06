@@ -19,7 +19,6 @@ export const Ecosystem = () => {
             textAlign: "center",
             fontSize: 50,
             fontWeight: "bold",
-            color: "var(--accent-text)",
           }}
         >
           Ecosystem
@@ -28,7 +27,6 @@ export const Ecosystem = () => {
         <>
           <s.TextTitle
             style={{
-              textAlign: "center",
               color: "var(--accent-text)",
               fontSize: 20,
               fontWeight: 100,

@@ -19,7 +19,6 @@ export const About = () => {
             textAlign: "center",
             fontSize: 50,
             fontWeight: "bold",
-            color: "var(--accent-text)",
           }}
         >
           Welcome To The Zoan Group

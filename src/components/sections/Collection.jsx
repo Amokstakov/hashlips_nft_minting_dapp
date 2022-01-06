@@ -15,7 +15,6 @@ export const Collection = () => {
             textAlign: "center",
             fontSize: 30,
             fontWeight: "bold",
-            color: "var(--accent-text)",
           }}
         >
           The Butterfly

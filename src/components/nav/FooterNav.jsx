@@ -13,17 +13,13 @@ export const FooterNav = () => {
     <FooterDiv>
       <FooterUL>
         <li>
-          <FooterATag href="https://twitter.com/julesforrest">
-            Twitter
-          </FooterATag>
+          <FooterATag href="#">Twitter</FooterATag>
         </li>
         <li>
-          <FooterATag href="https://codepen.io/julesforrest">
-            Contract
-          </FooterATag>
+          <FooterATag href="#">Contract</FooterATag>
         </li>
         <li>
-          <FooterATag href="mailto:julesforrest@gmail.com">Mint</FooterATag>
+          <FooterATag href="#">Mint</FooterATag>
         </li>
         <li>
           <p>👋</p>

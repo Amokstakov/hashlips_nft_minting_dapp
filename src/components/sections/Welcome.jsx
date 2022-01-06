@@ -12,14 +12,12 @@ export const Welcome = () => {
           padding: 24,
           borderRadius: 24,
         }}
-        id="ecosystem"
       >
         <s.TextTitle
           style={{
             textAlign: "center",
             fontSize: 50,
             fontWeight: "bold",
-            color: "var(--accent-text)",
           }}
         >
           The Group

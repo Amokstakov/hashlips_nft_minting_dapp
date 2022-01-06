@@ -22,6 +22,8 @@ import { FooterNav } from "../components/nav/FooterNav";
 import { HomeNav } from "../components/nav/HomeNav";
 import { Banner } from "../components/sections/Banner";
 import { Welcome } from "../components/sections/Welcome";
+import { Faq } from "../components/sections/FAQ";
+import { MintNow } from "../components/sections/MintNow";
 
 export const HomePage = () => {
   return (
@@ -33,7 +35,7 @@ export const HomePage = () => {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={"/config/images/bg.png"}
       >
-        <s.SpacerSmall />
+        <s.SpacerLarge />
         <Banner />
         <About />
         <s.SpacerMedium />
@@ -42,11 +44,12 @@ export const HomePage = () => {
         <Welcome />
         <Collection />
         <s.SpacerMedium />
-        <Ecosystem />
         <s.SpacerMedium />
+        <Ecosystem />
         <Roadmap />
         <s.SpacerMedium />
         <Team />
+        <Faq />
         <s.SpacerMedium />
         <Footer />
         <s.SpacerMedium />

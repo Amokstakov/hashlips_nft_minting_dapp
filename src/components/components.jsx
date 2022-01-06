@@ -34,6 +34,9 @@ export const StyledButtonSecondary = styled.button`
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
   }
+  &:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+  }
 `;
 
 export const StyledButtonLanding = styled.button`
@@ -134,6 +137,11 @@ export const StyledImgLanding = styled.img`
 export const StyledLink = styled.a`
   color: var(--secondary-text);
   text-decoration: none;
+  display: none;
+  @media (min-width: 500px) {
+    grid-auto-flow: column;
+    display: block;
+  }
 `;
 
 export const FooterDiv = styled.div`

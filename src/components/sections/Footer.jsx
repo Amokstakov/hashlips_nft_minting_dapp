@@ -27,7 +27,6 @@ export const Footer = () => {
             textAlign: "center",
             fontSize: 50,
             fontWeight: "bold",
-            color: "var(--accent-text)",
           }}
         >
           Join the Community
@@ -46,8 +45,12 @@ export const Footer = () => {
           <StyledLink>Join the Zoans Discord</StyledLink>
         </StyledButtonSecondary>
       </s.Container>
-      <s.Container flex={1} jc={"center"} ai={"center"}></s.Container>
-      <s.Container flex={1} jc={"center"} ai={"center"}></s.Container>
+      <s.Container flex={1} jc={"center"} ai={"center"}>
+        <StyledImgGrid alt={"team-fox"} src={"/config/images/fox/8.png"} />
+      </s.Container>
+      <s.Container flex={1} jc={"center"} ai={"center"}>
+        <StyledImgGrid alt={"team-owl"} src={"/config/images/bear/6.png"} />
+      </s.Container>
     </ResponsiveWrapper>
   );
 };

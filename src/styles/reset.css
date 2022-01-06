@@ -165,3 +165,40 @@ div {
   user-select: none;
   -o-user-select: none;
 }
+
+.accordion {
+  width:100%;
+  border-bottom: 2px solid black;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #ebc908;
+}
+
+.accordion-title:hover {
+  background-color: #ebc908;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.accordion-content {
+  background-color: #ebc908;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+
+  .accordion {
+    width: 90%;
+  }
+}

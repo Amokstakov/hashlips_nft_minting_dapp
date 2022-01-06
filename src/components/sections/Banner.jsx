@@ -1,25 +1,16 @@
 import * as s from "../../styles/globalStyles";
 import { StyledImg, ResponsiveWrapper } from "../components";
+import { MintNow } from "../sections/MintNow";
 export const Banner = () => {
   return (
     <ResponsiveWrapper>
-      <s.Container
-        flex={1}
-        ai={"center"}
-        style={{
-          padding: 12,
-        }}
-      >
+      <s.Container flex={1} ai={"center"} style={{}}>
         <StyledImg alt={"banner-bear"} src={"/config/images/base/bearG.png"} />
         <StyledImg alt={"banner-fox"} src={"/config/images/base/foxG.png"} />
       </s.Container>
-      <s.Container
-        flex={1}
-        ai={"center"}
-        style={{
-          padding: 12,
-        }}
-      >
+
+      <MintNow />
+      <s.Container flex={1} ai={"center"} style={{}}>
         <StyledImg
           alt={"banner-butterfly"}
           src={"/config/images/base/butterG.png"}

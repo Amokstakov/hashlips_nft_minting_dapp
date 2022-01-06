@@ -15,10 +15,8 @@ export const Team = () => {
       >
         <s.TextTitle
           style={{
-            textAlign: "center",
             fontSize: 50,
             fontWeight: "bold",
-            color: "var(--accent-text)",
           }}
         >
           The Team
@@ -39,7 +37,7 @@ export const Team = () => {
             <span style={{ color: "var(--primary)", fontWeight: "bold" }}>
               baseW:
             </span>{" "}
-            Lead developer. Former Amazon engineer who now works on different
+            Lead developer. Former FAANG engineer who now works on different
             blockchains
             <s.SpacerMedium />
             <span style={{ color: "var(--primary)", fontWeight: "bold" }}>
@@ -64,11 +62,9 @@ export const Team = () => {
       </s.Container>
       <s.SpacerLarge />
       <s.Container flex={1} jc={"center"} ai={"center"}>
-        <StyledImgGrid alt={"team-fox"} src={"/config/images/fox/8.png"} />
-        <StyledImgGrid
-          alt={"team-elephant"}
-          src={"/config/images/ellie/8.png"}
-        />
+        <StyledImgGrid alt={"team-fox"} src={"/config/images/ellie/8.png"} />
+      </s.Container>
+      <s.Container flex={1} jc={"center"} ai={"center"}>
         <StyledImgGrid alt={"team-owl"} src={"/config/images/base/owlG.png"} />
       </s.Container>
     </ResponsiveWrapper>
