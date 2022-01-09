@@ -163,7 +163,7 @@ export const MintPage = () => {
               borderRadius: 12,
               border: "1px dashed var(--primary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
-              opacity: 0.99,
+              opacity: 0.98,
             }}
           >
             <s.TextTitle
