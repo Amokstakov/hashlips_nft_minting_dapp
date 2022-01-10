@@ -1,14 +1,14 @@
 {
-  "CONTRACT_ADDRESS": "0xCC951442Aa4Ec65164714cF783FdC1f665c66178",
-  "SCAN_LINK": "https://polygonscan.com/token/0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
+  "CONTRACT_ADDRESS": "0xbdf0738f8B976d6c7bE9322F432c9074bF3dc0f7",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xbdf0738f8B976d6c7bE9322F432c9074bF3dc0f7",
   "NETWORK": {
     "NAME": "Rinkeby",
     "SYMBOL": "RETH",
     "ID": 4 
   },
   "NFT_NAME": "Zoan Group",
-  "SYMBOL": "ZOAN",
-  "MAX_SUPPLY": 5000,
+  "SYMBOL": "ZG",
+  "MAX_SUPPLY": 1500,
   "WEI_COST": 60000000000000000,
   "DISPLAY_COST": 0.06,
   "GAS_LIMIT": 285000,

@@ -24,6 +24,8 @@ import { Banner } from "../components/sections/Banner";
 import { Welcome } from "../components/sections/Welcome";
 import { Faq } from "../components/sections/FAQ";
 import { MintNow } from "../components/sections/MintNow";
+import { Description } from "../components/sections/Description";
+import { Portal } from "../components/sections/Portal";
 
 export const HomePage = () => {
   return (
@@ -44,6 +46,10 @@ export const HomePage = () => {
         <Welcome />
         <Collection />
         <s.SpacerMedium />
+        <s.SpacerMedium />
+        <Description />
+        <s.SpacerMedium />
+        <Portal />
         <s.SpacerMedium />
         <Ecosystem />
         <Roadmap />
