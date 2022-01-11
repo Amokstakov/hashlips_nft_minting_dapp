@@ -13,7 +13,6 @@ export const Description = () => {
             padding: 24,
             borderRadius: 24,
           }}
-          id="ecosystem"
         >
           <s.TextTitle
             style={{
@@ -63,7 +62,6 @@ export const Description = () => {
             padding: 24,
             borderRadius: 24,
           }}
-          id="ecosystem"
         >
           <s.TextTitle
             style={{
@@ -114,7 +112,6 @@ export const Description = () => {
             padding: 24,
             borderRadius: 24,
           }}
-          id="ecosystem"
         >
           <s.TextTitle
             style={{
@@ -162,7 +159,6 @@ export const Description = () => {
             padding: 24,
             borderRadius: 24,
           }}
-          id="ecosystem"
         >
           <s.TextTitle
             style={{

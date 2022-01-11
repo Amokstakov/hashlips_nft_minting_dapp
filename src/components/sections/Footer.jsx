@@ -41,9 +41,13 @@ export const Footer = () => {
           more information.
         </s.TextTitle>
         <s.SpacerLarge />
-        <StyledButtonSecondary>
-          <StyledLink>Join the Zoans Discord</StyledLink>
-        </StyledButtonSecondary>
+        <StyledLink href="https://discord.gg/F6fnRMDpkk">
+          <StyledButtonSecondary>
+            <StyledLink href="https://discord.gg/F6fnRMDpkk">
+              Join the Zoans Discord
+            </StyledLink>
+          </StyledButtonSecondary>
+        </StyledLink>
       </s.Container>
       <s.Container flex={1} jc={"center"} ai={"center"}>
         <StyledImgGrid alt={"team-fox"} src={"/config/images/fox/8.png"} />

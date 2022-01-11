@@ -26,6 +26,7 @@ import { Faq } from "../components/sections/FAQ";
 import { MintNow } from "../components/sections/MintNow";
 import { Description } from "../components/sections/Description";
 import { Portal } from "../components/sections/Portal";
+import { AlertBanner } from "../components/sections/AlertBanner";
 
 export const HomePage = () => {
   return (
@@ -38,6 +39,7 @@ export const HomePage = () => {
         image={"/config/images/bg.png"}
       >
         <s.SpacerLarge />
+        <AlertBanner />
         <Banner />
         <About />
         <s.SpacerMedium />

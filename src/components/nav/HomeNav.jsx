@@ -21,10 +21,10 @@ export const HomeNav = () => {
         <MenuLink href="/#roadmap">ROADMAP</MenuLink>
         <MenuLink href="/#team">TEAM</MenuLink>
         <MenuLink href="/mint">MINT</MenuLink>
-        <MenuLink href="/#ecosystem">
+        <MenuLink href="https://twitter.com/ZoanGroup" target="_blank">
           <BsTwitter />
         </MenuLink>
-        <MenuLink href="/#ecosystem">
+        <MenuLink href="https://discord.gg/F6fnRMDpkk">
           <BsDiscord />
         </MenuLink>
       </Menu>

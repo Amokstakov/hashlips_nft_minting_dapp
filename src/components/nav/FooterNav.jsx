@@ -13,13 +13,20 @@ export const FooterNav = () => {
     <FooterDiv>
       <FooterUL>
         <li>
-          <FooterATag href="#">Twitter</FooterATag>
+          <FooterATag href="https://twitter.com/ZoanGroup" target="_blank">
+            Twitter
+          </FooterATag>
         </li>
         <li>
           <FooterATag href="#">Contract</FooterATag>
         </li>
+        {/*
         <li>
-          <FooterATag href="#">Mint</FooterATag>
+          <FooterATag href="#">OpenSea</FooterATag>
+        </li>
+        */}
+        <li>
+          <FooterATag href="/mint">Mint</FooterATag>
         </li>
         <li>
           <p>👋</p>

@@ -2,15 +2,15 @@
   "CONTRACT_ADDRESS": "0xbdf0738f8B976d6c7bE9322F432c9074bF3dc0f7",
   "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xbdf0738f8B976d6c7bE9322F432c9074bF3dc0f7",
   "NETWORK": {
-    "NAME": "Rinkeby",
-    "SYMBOL": "RETH",
-    "ID": 4 
+    "NAME": "Polygon",
+    "SYMBOL": "MATIC",
+    "ID": 137 
   },
   "NFT_NAME": "Zoan Group",
   "SYMBOL": "ZG",
   "MAX_SUPPLY": 1500,
-  "WEI_COST": 60000000000000000,
-  "DISPLAY_COST": 0.06,
+  "WEI_COST": 40000000000000000000,
+  "DISPLAY_COST": 40,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",
